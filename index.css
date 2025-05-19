@@ -1,0 +1,83 @@
+/* Kezdőlap retro horror stílusa */
+body {
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 5px #0f0;
+    
+}
+
+.bg {
+    background-color: #000;
+    background-image: url('https://i.pinimg.com/736x/6d/a6/49/6da649d6658a0599abbee2f99ddcefdd.jpg');
+    background-repeat: repeat;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px dashed #0f0;
+    animation: glitch 0.5s infinite alternate;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #0f0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #f00;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #0f0;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
