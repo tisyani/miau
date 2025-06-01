@@ -1,0 +1,130 @@
+
+body {
+    background-color: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #111;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px dashed #0f0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header-image {
+    border: 3px solid #0f0;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(150%);
+}
+
+h1, h2, h3 {
+    color: #f00;
+    text-shadow: 0 0 5px #f00;
+}
+
+marquee {
+    background-color: #111;
+    color: #0f0;
+    padding: 5px;
+    border-top: 1px dashed #0f0;
+    border-bottom: 1px dashed #0f0;
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    border: 1px solid #0f0;
+}
+
+nav a {
+    color: #0f0;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #0f0;
+    color: #000;
+}
+
+.creepy-box {
+    border: 1px solid #f00;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #220000;
+}
+
+.inline-image {
+    float: right;
+    margin: 0 0 15px 15px;
+    border: 1px solid #0f0;
+    max-width: 200px;
+    filter: grayscale(100%) contrast(200%) brightness(70%);
+}
+
+.creepy-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.creepy-table th, .creepy-table td {
+    border: 1px solid #0f0;
+    padding: 8px;
+    text-align: left;
+}
+
+.creepy-table th {
+    background-color: #002200;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 1px dashed #0f0;
+    padding-top: 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.evidence-item, .sighting {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #333;
+}
+
+.evidence-item:last-child, .sighting:last-child {
+    border-bottom: none;
+}
+
+.sightings-image {
+  border: 3px solid #0f0;
+    max-width: 100%;
+    height: auto;
+}
